@@ -57,7 +57,7 @@ body {
 
 					<label for="title">제목</label>
 
-					<input value='<c:out value="${updateContent.title}"/>' type="text" class="form-control" name="title" id="title">
+					<input value='<c:out value="${boardContent.title}"/>' type="text" class="form-control" name="title" id="title">
 
 				</div>
 
@@ -77,7 +77,7 @@ body {
 
 					<label for="content">내용</label>
 
-					<textarea  value='<c:out value="${updateContent.content}"/>' class="form-control" rows="5" name="content" id="content" placeholder="내용을 입력해 주세요" ></textarea>
+					<input  value='<c:out value="${boardContent.content}"/>' class="form-control" rows="5" name="content" id="content" placeholder="내용을 입력해 주세요" ></input>
 
 				</div>
 
@@ -85,9 +85,9 @@ body {
 
 			<div >
 
-				<button type="button" class="btn btn-sm btn-primary" id="btnSave">저장</button>
+				<button type="button" class="btn btn-sm btn-primary" id="btnSave" onclick="location.href='${pageContext.request.contextPath}/board/saveupdate.do'">저장</button>
 
-				<button type="button" class="btn btn-sm btn-primary" id="btnList">목록</button>
+				<button type="button" class="btn btn-sm btn-primary" id="btnList" onclick="location.href='${pageContext.request.contextPath}/board/getBoardList.do'">목록</button>
 
 			</div>
 

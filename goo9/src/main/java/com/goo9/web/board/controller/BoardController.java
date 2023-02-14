@@ -79,15 +79,15 @@ public class BoardController {
 	
 	@RequestMapping(value = "/updateForm.do", method = RequestMethod.GET)
 
-	public String updateBoard(Model model) throws Exception {
+	public String updateBoard(Model model, @RequestParam("bid") int bid) throws Exception {
 		
-
+		model.addAttribute("boardContent", boardService.getBoardContent(bid));
 
 		return "board/updateForm";
 
 	}
 	
-	@RequestMapping(value = "/saveupdate.do", method = RequestMethod.POST)
+	@RequestMapping(value = "/saveupdate.do", method = RequestMethod.GET)
 
 	public String saveUpdate(@ModelAttribute("BoardVO") BoardVO boardVO
 
