@@ -91,8 +91,10 @@
 				<button type="submit" class="btn btn-sm btn-primary" id="btnUpdate">수정</button>
 				</form>
 		<form action="${pageContext.request.contextPath}/board/deleteForm.do">
+				<%-- <c:if test="${sessionScope.userId eq ${boardContent.reg_id}}"> --%>
 				<input type = "text" name = "bid" value="${boardContent.bid}" hidden="false" /> 
 				<button type="submit" class="btn btn-sm btn-primary" id="btnDelete">삭제</button>
+				
 		</form>
 
 				<button type="button" class="btn btn-sm btn-primary" id="btnList" onclick="location.href='${pageContext.request.contextPath}/board/getBoardList.do'">목록</button>

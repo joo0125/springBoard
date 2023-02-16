@@ -21,7 +21,7 @@ public interface BoardService {
 	
 	public void updateBoard(BoardVO boardVO) throws Exception;
 	
-	public int deleteBoard(int bid) throws Exception;
+	public int deleteBoard(int bid, String boardId, String uId) throws Exception;
 	
 	public BoardVO getBoardContent(int bid) throws Exception;
 	  // 댓글 리스트

@@ -32,7 +32,7 @@ public class BoardServiceImpl implements BoardService{
 	
 
 	public List<BoardVO> getBoardList() throws Exception {
-
+		
 		return boardDAO.getBoardList();
 
 	}
@@ -61,10 +61,12 @@ public class BoardServiceImpl implements BoardService{
 
 	}
 	
-	public int deleteBoard(int bid) throws Exception {
+	public int deleteBoard(int bid ,String boardId, String uId) throws Exception {
+		
+		
 		
 		return boardDAO.deleteBoard(bid);
-		
+		//return ;
 	}
 	
 	// 댓글 리스트

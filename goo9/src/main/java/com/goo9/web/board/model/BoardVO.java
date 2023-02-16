@@ -61,12 +61,12 @@ public class BoardVO {
 	}
 
 	public String getReg_dt() {
-		return reg_dt;
+		return reg_dt; 
 	}
 
 	public void setReg_dt(String reg_dt) {
 		this.reg_dt = reg_dt;
-	}
+	} 
 
 	public String getEdit_dt() {
 		return edit_dt;
@@ -82,5 +82,6 @@ public class BoardVO {
     public void setUserName(String userName) {
         this.userName = userName;
     }
-
+    
+    
 }
